@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/594040-large-nautilus-wallpaper-1920x1200-for-phone.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:150%;
+
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:5% 10% 5% 10%;
+}
+
+button{
+  
+    background-color:#5b94af;
+    color: white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;   
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 10px rgba(141, 181, 197, 0.5);
+    margin-left:40%;
+   
+}
+button:hover{
+    opacity: .5;
+    transition: .8s;
+}
+
+.hesap #test{
+    width:60vh;
+    margin-left:5%;
+    margin-top:10%;
+    font-size: 30px;
+    color: #5a1056;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#main{
+    font-size: 50px;
+    margin-top:50px;
+
+}
+h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(58, 164, 179);
+    font-family: monospace;
+
+}
+
+
+div .hesap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+  
+   
+}
+
+input{
+    padding:1%;
+    height:30px;
+    border-radius: 10px;
+    border: 1px solid #7de7de;
+    font-size: 20px;
+    background-color: #7da2b3;
+    margin-top: 50px;
+    margin-left:30%;
+    text-align: center;
+
+}
+
+
+
+div .info{
+    height:40%;
+    width:40%;
+    
+   
+}
+
+.info div{
+    background-color: rgb(133, 178, 204);
+    height:400px; 
+    width:80%;
+    overflow: scroll;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right:10%;
+    padding:10px;
+    
+  
+}
+#side p{
+    margin:20px
+}
+#side h2{
+    text-align: center;
+    margin: 10px;
+    color: rgb(28, 66, 21);
+    
+}
+ label{
+     position: relative;
+ }
+label p{
+    color:#685a35;
+    font-size:1rem;
+    user-select:none;
+    position: absolute;
+    top:10%;
+    margin-left:9rem;
+    transition:top 0.7s, font-size 0.2s, color 0.2s;
+}
+
+
+label input:focus +p,
+label input:not(:placeholder-shown) +p{
+    top:-30px;
+    font-size:0.9rem;
+    background-color: rgba(0, 0, 0, 0.918);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+   section{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+    
+   }
+   div #side{
+       margin-left: 3%;
+       margin-right:3%;
+       max-width:70%;
+   }
+   label input{
+        margin-left: 10%;
+        margin-right:10%;
+   }
+   .hesap button{
+       margin-left:20%;
+   }
+   .hesap #test{
+    margin-left:40%;
+}
+label p{
+    color:#685a35;
+    font-size:1rem;
+    user-select:none;
+    position: absolute;
+    top:10%;
+    margin-left:5rem;
+    transition:top 0.7s, font-size 0.2s, color 0.2s;
+}
+.hesap #test{
+    width:40vh;
+    margin-left:3%;
+    margin-top:10%;
+    font-size: 20px;
+    color: #5a1056;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+}
+
